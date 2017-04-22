@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+    <class name="com.wjs.weixin2d.domain.activity.Activity" table="TB_ACTIVITY" batch-size="100"
+           schema="weixin2d_database" where="logic_delete = 0">
+        <!--<cache usage="read-only" />-->
+        <comment>活动表</comment>
+        <id name="id" access="property">
+            <column name="id" not-null="true" length="20">
+                <comment>主键</comment>
+            </column>
+            <generator class="identity"/>
+        </id>
+        <discriminator>
+            <column name="type" not-null="true" sql-type="integer">
+                <comment>活动类型(1:钱币雨活动;)</comment>
+            </column>
+        </discriminator>
+        <version name="version" type="long">
+            <column name="version" default="0" not-null="true">
+                <comment>版本号</comment>
+            </column>
+        </version>
+        <property name="createTime" type="timestamp" update="false">
+            <column name="create_time" not-null="true" length="50">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="updateTime" type="timestamp">
+            <column name="update_time" not-null="true" length="50">
+                <comment>更新时间</comment>
+            </column>
+        </property>
+        <property name="logicDelete">
+            <column name="logic_delete" not-null="true" default="0">
+                <comment>是否已逻辑删除</comment>
+            </column>
+        </property>
+        <property name="name">
+            <column name="name">
+                <comment>名称</comment>
+            </column>
+        </property>
+        <property name="title">
+            <column name="title">
+                <comment>标题</comment>
+            </column>
+        </property>
+        <property name="startTime">
+            <column name="start_time">
+                <comment>开始时间</comment>
+            </column>
+        </property>
+        <property name="endTime">
+            <column name="end_time">
+                <comment>结束时间</comment>
+            </column>
+        </property>
+        <property name="memo">
+            <column name="memo">
+                <comment>描述</comment>
+            </column>
+        </property>
+        <property name="type" column="type" update="false" insert="false"/>
+        <subclass discriminator-value="1" name="com.wjs.weixin2d.domain.activity.CoinRainActivity">
+            <property name="goldNum">
+                <column name="gold_num">
+                    <comment>金币数量</comment>
+                </column>
+            </property>
+            <property name="silverNum">
+                <column name="silver_num">
+                    <comment>银币数量</comment>
+                </column>
+            </property>
+            <property name="goldHeadNum">
+                <column name="gold_head_num">
+                    <comment>金币堆数量</comment>
+                </column>
+            </property>
+            <property name="bombNum">
+                <column name="bomb_num">
+                    <comment>炸弹数量</comment>
+                </column>
+            </property>
+
+        </subclass>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+    <class name="com.wjs.weixin2d.domain.channel.Channel" table="TB_CHANNEL" batch-size="100"
+           schema="weixin2d_database"
+           where="logic_delete = 0">
+        <!--<cache usage="read-only" />-->
+        <comment>渠道表</comment>
+        <id name="id" access="property">
+            <column name="id" not-null="true" length="20">
+                <comment>主键</comment>
+            </column>
+            <generator class="identity"/>
+        </id>
+        <version name="version" type="long">
+            <column name="version" default="0" not-null="true">
+                <comment>版本号</comment>
+            </column>
+        </version>
+        <property name="createTime" type="timestamp" update="false">
+            <column name="create_time" not-null="true" length="50">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="updateTime" type="timestamp">
+            <column name="update_time" not-null="true" length="50">
+                <comment>更新时间</comment>
+            </column>
+        </property>
+        <property name="logicDelete">
+            <column name="logic_delete" not-null="true" default="0">
+                <comment>是否已逻辑删除</comment>
+            </column>
+        </property>
+        <property name="name">
+            <column name="name">
+                <comment>渠道名称</comment>
+            </column>
+        </property>
+        <property name="memo">
+            <column name="memo">
+                <comment>渠道描述</comment>
+            </column>
+        </property>
+        <property name="sceneStr">
+            <column name="scene_str" unique="true">
+                <comment>场景值</comment>
+            </column>
+        </property>
+        <property name="scene1">
+            <column name="scene1">
+                <comment>场景1</comment>
+            </column>
+        </property>
+        <property name="scene2">
+            <column name="scene2">
+                <comment>场景2</comment>
+            </column>
+        </property>
+        <property name="scene3">
+            <column name="scene3">
+                <comment>场景3</comment>
+            </column>
+        </property>
+        <property name="scene4">
+            <column name="scene4">
+                <comment>场景4</comment>
+            </column>
+        </property>
+        <property name="scene5">
+            <column name="scene5">
+                <comment>场景5</comment>
+            </column>
+        </property>
+        <many-to-one name="provider">
+            <column name="provider_id">
+                <comment>提供者外键</comment>
+            </column>
+        </many-to-one>
+        <property name="channelStrategy" type="channelStrategy">
+            <column name="channel_strategy">
+                <comment>渠道策略(1:永久;)</comment>
+            </column>
+        </property>
+        <many-to-one name="qrCode" cascade="all">
+            <column name="qr_code_id">
+                <comment>二维码外键</comment>
+            </column>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

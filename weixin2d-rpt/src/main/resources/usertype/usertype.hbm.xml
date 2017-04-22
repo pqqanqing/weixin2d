@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+
+    <typedef name="channelStrategy" class="cn.com.common.orm.hibernate.usertype.StatusAndClassNumUserType">
+        <param name="usertype">com.wjs.weixin2d.domain.channel.strategy.ChannelStrategy</param>
+    </typedef>
+
+    <typedef name="string4Map" class="cn.com.common.orm.hibernate.usertype.String4MapUserType" />
+
+</hibernate-mapping>

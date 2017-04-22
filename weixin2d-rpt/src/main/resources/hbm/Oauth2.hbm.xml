@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+    <class name="com.wjs.weixin2d.domain.oauth2.Oauth2" table="TB_OAUTH2" batch-size="100"
+           schema="weixin2d_database"
+           where="logic_delete = 0">
+        <!--<cache usage="read-only" />-->
+        <comment>提供者表</comment>
+        <id name="id" access="property">
+            <column name="id" not-null="true" length="20">
+                <comment>主键</comment>
+            </column>
+            <generator class="identity"/>
+        </id>
+        <version name="version" type="long">
+            <column name="version" default="0" not-null="true">
+                <comment>版本号</comment>
+            </column>
+        </version>
+        <property name="createTime" type="timestamp" update="false">
+            <column name="create_time" not-null="true" length="50">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="updateTime" type="timestamp">
+            <column name="update_time" not-null="true" length="50">
+                <comment>更新时间</comment>
+            </column>
+        </property>
+        <property name="logicDelete">
+            <column name="logic_delete" not-null="true" default="0">
+                <comment>是否已逻辑删除</comment>
+            </column>
+        </property>
+        <many-to-one name="provider">
+            <column name="provider_id">
+                <comment>provider外键</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="oauth2Config">
+            <column name="oauth2_config_id">
+                <comment>oauth2Config外键</comment>
+            </column>
+        </many-to-one>
+        <property name="codeUrl">
+            <column name="code_url">
+                <comment>code地址</comment>
+            </column>
+        </property>
+        <property name="code">
+            <column name="code">
+                <comment>code参数</comment>
+            </column>
+        </property>
+        <property name="state">
+            <column name="state">
+                <comment>state参数</comment>
+            </column>
+        </property>
+        <property name="accessTokenUrl">
+            <column name="access_token_url">
+                <comment>accessToken地址</comment>
+            </column>
+        </property>
+        <property name="accessTokenJson" type="text">
+            <column name="access_token_json">
+                <comment>accessToken结果</comment>
+            </column>
+        </property>
+        <property name="openId">
+            <column name="open_id">
+                <comment>openId</comment>
+            </column>
+        </property>
+        <property name="accessToken">
+            <column name="access_token">
+                <comment>网页token</comment>
+            </column>
+        </property>
+        <property name="userinfoUrl">
+            <column name="userinfo_url">
+                <comment>userinfo地址</comment>
+            </column>
+        </property>
+        <property name="userinfoJson" type="text">
+            <column name="userinfo_json">
+                <comment>userinfo结果</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
