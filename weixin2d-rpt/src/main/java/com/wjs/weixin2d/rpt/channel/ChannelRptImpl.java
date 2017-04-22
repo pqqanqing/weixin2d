@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.channel;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.domain.channel.Channel;
 import com.wjs.weixin2d.domain.channel.ChannelRpt;
 import org.hibernate.Query;

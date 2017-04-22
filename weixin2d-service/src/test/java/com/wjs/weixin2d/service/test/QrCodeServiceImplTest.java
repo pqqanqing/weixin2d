@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.service.test;
 
-import cn.com.common.base.base.BasePageResults;
-import cn.com.common.base.query.QueryService;
+import com.wjs.common.base.base.BasePageResults;
+import com.wjs.common.base.query.QueryService;
 import com.alibaba.fastjson.JSONObject;
 import com.wjs.weixin2d.api.dto.ChannelDTO;
 import com.wjs.weixin2d.domain.channel.Channel;

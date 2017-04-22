@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.domain.message;
 
 
-import cn.com.common.base.base.BaseEntity;
+import com.wjs.common.base.base.BaseEntity;
 import com.wjs.weixin2d.domain.config.message.MessageConfig;
 import lombok.Getter;
 import lombok.Setter;

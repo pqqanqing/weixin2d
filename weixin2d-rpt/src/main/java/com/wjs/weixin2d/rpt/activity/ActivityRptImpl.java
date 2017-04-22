@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.activity;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.domain.activity.Activity;
 import com.wjs.weixin2d.domain.activity.ActivityRpt;
 import org.springframework.stereotype.Repository;

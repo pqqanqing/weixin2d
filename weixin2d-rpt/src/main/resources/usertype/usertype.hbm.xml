@@ -3,10 +3,10 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
 
-    <typedef name="channelStrategy" class="cn.com.common.orm.hibernate.usertype.StatusAndClassNumUserType">
+    <typedef name="channelStrategy" class="com.wjs.common.orm.hibernate.usertype.StatusAndClassNumUserType">
         <param name="usertype">com.wjs.weixin2d.domain.channel.strategy.ChannelStrategy</param>
     </typedef>
 
-    <typedef name="string4Map" class="cn.com.common.orm.hibernate.usertype.String4MapUserType" />
+    <typedef name="string4Map" class="com.wjs.common.orm.hibernate.usertype.String4MapUserType" />
 
 </hibernate-mapping>

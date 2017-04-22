@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.player;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.api.dto.PlayerDTO;
 import com.wjs.weixin2d.domain.player.Player;
 import com.wjs.weixin2d.domain.player.PlayerRpt;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.util.List;
 
-import static cn.com.common.base.security.SecurityKeyFactory.getSecurityKey;
+import static com.wjs.common.base.security.SecurityKeyFactory.getSecurityKey;
 
 @Repository
 public class PlayerRptImpl extends BaseRptImpl<Player, Serializable> implements PlayerRpt {

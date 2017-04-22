@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.service.jssdk;
 
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.alibaba.fastjson.JSONObject;
 import com.wjs.weixin2d.common.constants.JsapiTicketConstant;
 import com.wjs.weixin2d.common.util.SignUtil;
@@ -14,8 +14,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
-import static cn.com.common.base.util.HttpUtil2.doGet2;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.HttpUtil2.doGet2;
 import static com.alibaba.fastjson.JSON.parseObject;
 import static com.wjs.weixin2d.common.constants.JsapiTicketConstant.JSAPI_TICKET_URL;
 import static com.wjs.weixin2d.common.constants.TokenConstant.ACCESS_TOKEN_URL_51;

@@ -1,9 +1,9 @@
 package com.wjs.weixin2d.domain.config.message;
 
-import cn.com.common.base.base.BaseEntity;
-import cn.com.common.base.exception.BusinessExecption;
-import cn.com.common.base.util.HttpUtil2;
-import cn.com.common.base.util.ScanClassUtil;
+import com.wjs.common.base.base.BaseEntity;
+import com.wjs.common.base.execption.BusinessExecption;
+import com.wjs.common.base.util.HttpUtil2;
+import com.wjs.common.base.util.ScanClassUtil;
 import com.wjs.weixin2d.domain.message.Message;
 import com.wjs.weixin2d.domain.message.Message4QrCode;
 import lombok.Getter;
@@ -13,8 +13,8 @@ import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
-import static cn.com.common.base.util.HttpUtil2.doGet2;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.HttpUtil2.doGet2;
 import static com.wjs.weixin2d.common.constants.QrCodeConstant.ACCESS_TOKEN_URL;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.isNoneBlank;

@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.rpt.channel;
 
 
-import cn.com.common.base.base.BaseQueryBuilder;
+import com.wjs.common.base.base.BaseQueryBuilder;
 import com.wjs.weixin2d.domain.channel.Channel;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;

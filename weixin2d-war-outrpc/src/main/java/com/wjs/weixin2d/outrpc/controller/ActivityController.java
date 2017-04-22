@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.outrpc.controller;
 
-import cn.com.common.base.rpc.RpcResponse;
+import com.wjs.common.base.rpc.RpcResponse;
 import com.wjs.weixin2d.api.dto.LuckDTO;
 import com.wjs.weixin2d.service.luck.LuckService;
 import org.springframework.beans.factory.annotation.Autowired;

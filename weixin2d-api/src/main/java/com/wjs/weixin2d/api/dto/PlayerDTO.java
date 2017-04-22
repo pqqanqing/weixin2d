@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.api.dto;
 
-import cn.com.common.base.base.BaseDTO;
+import com.wjs.common.base.base.BaseDTO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;

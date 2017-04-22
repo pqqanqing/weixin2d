@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.domain.luck;
 
-import cn.com.common.base.base.BaseEntity;
+import com.wjs.common.base.base.BaseEntity;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.github.stuxuhai.jpinyin.PinyinFormat;
 import com.github.stuxuhai.jpinyin.PinyinHelper;
@@ -8,7 +8,7 @@ import com.wjs.weixin2d.api.dto.LuckDTO;
 import lombok.Getter;
 import lombok.Setter;
 
-import static cn.com.common.base.util.BeanPropertiesUtil.copyProperties;
+import static com.wjs.common.base.util.BeanPropertiesUtil.copyProperties;
 
 @Setter
 @Getter

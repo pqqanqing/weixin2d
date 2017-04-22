@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.domain.message;
 
-import cn.com.common.base.annotation.StatusAndClassNum;
+import com.wjs.common.base.annotation.StatusAndClassNum;
 import com.wjs.weixin2d.domain.config.message.MessageConfig;
 import lombok.Getter;
 import lombok.Setter;

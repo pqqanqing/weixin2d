@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.domain.channel.strategy;
 
-import cn.com.common.base.annotation.StatusAndClassNum;
+import com.wjs.common.base.annotation.StatusAndClassNum;
 import com.alibaba.fastjson.JSONObject;
 import com.wjs.weixin2d.api.dto.ChannelDTO;
 import com.wjs.weixin2d.domain.channel.Channel;
@@ -9,7 +9,7 @@ import com.wjs.weixin2d.domain.qrcode.QrCode4Everlast;
 
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
 import static com.wjs.weixin2d.common.constants.QrCodeConstant.JSON_4_QRCODE_TICKET;
 
 @StatusAndClassNum(superClass = ChannelStrategy.class, number = ChannelDTO.STRATEGY_EVERLAST, describe = "生成永久二维码", parasitClass = Channel.class)

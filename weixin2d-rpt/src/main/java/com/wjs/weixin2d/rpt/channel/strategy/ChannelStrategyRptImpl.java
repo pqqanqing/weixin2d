@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.channel.strategy;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.domain.channel.strategy.ChannelStrategy;
 import com.wjs.weixin2d.domain.channel.strategy.ChannelStrategyRpt;
 

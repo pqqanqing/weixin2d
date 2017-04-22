@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.service.luck;
 
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.github.stuxuhai.jpinyin.PinyinException;
 import com.wjs.weixin2d.api.dto.LuckDTO;
 import com.wjs.weixin2d.domain.luck.Luck;

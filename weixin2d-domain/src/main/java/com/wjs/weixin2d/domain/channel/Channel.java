@@ -1,8 +1,8 @@
 package com.wjs.weixin2d.domain.channel;
 
-import cn.com.common.base.annotation.StatusAndClassNum;
-import cn.com.common.base.base.BaseEntity;
-import cn.com.common.base.util.ScanClassUtil;
+import com.wjs.common.base.annotation.StatusAndClassNum;
+import com.wjs.common.base.base.BaseEntity;
+import com.wjs.common.base.util.ScanClassUtil;
 import com.wjs.weixin2d.api.dto.ChannelDTO;
 import com.wjs.weixin2d.domain.channel.strategy.ChannelStrategy;
 import com.wjs.weixin2d.domain.provider.Provider;
@@ -13,7 +13,7 @@ import lombok.Setter;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.com.common.base.util.HttpUtil2.doGet2;
+import static com.wjs.common.base.util.HttpUtil2.doGet2;
 import static com.wjs.weixin2d.common.constants.QrCodeConstant.ACCESS_TOKEN_URL;
 
 @Setter

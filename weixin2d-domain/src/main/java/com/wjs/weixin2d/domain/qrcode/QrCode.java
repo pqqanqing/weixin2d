@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.domain.qrcode;
 
-import cn.com.common.base.base.BaseEntity;
+import com.wjs.common.base.base.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -8,7 +8,7 @@ import lombok.ToString;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
 import static com.wjs.weixin2d.common.constants.QrCodeConstant.TICKET_EXCHANGE_QRCODE;
 
 @Setter

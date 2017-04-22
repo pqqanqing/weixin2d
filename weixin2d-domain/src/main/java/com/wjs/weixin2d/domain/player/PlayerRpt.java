@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.domain.player;
 
 
-import cn.com.common.base.rpt.BaseRpt;
+import com.wjs.common.base.rpt.BaseRpt;
 import com.wjs.weixin2d.api.dto.PlayerDTO;
 
 import java.io.Serializable;

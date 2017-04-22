@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.config.message;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.domain.config.message.MessageConfig;
 import com.wjs.weixin2d.domain.config.message.MessageConfigRpt;
 import org.hibernate.Query;

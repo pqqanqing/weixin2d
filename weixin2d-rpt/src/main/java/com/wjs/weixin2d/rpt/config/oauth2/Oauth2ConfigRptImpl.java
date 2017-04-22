@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.rpt.config.oauth2;
 
-import cn.com.common.base.rpt.BaseRptImpl;
+import com.wjs.common.base.rpt.BaseRptImpl;
 import com.wjs.weixin2d.domain.config.oauth2.Oauth2Config;
 import com.wjs.weixin2d.domain.config.oauth2.Oauth2ConfigRpt;
 import org.springframework.stereotype.Repository;

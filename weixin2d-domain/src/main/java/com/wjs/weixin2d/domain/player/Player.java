@@ -1,8 +1,8 @@
 package com.wjs.weixin2d.domain.player;
 
-import cn.com.common.base.base.BaseEntity;
-import cn.com.common.base.exception.BusinessExecption;
-import cn.com.common.base.security.SecureNum;
+import com.wjs.common.base.base.BaseEntity;
+import com.wjs.common.base.execption.BusinessExecption;
+import com.wjs.common.base.security.SecureNum;
 import com.wjs.weixin2d.api.dto.PlayerDTO;
 import com.wjs.weixin2d.domain.activity.Activity;
 import lombok.Getter;
@@ -10,10 +10,10 @@ import lombok.Setter;
 
 import java.util.Date;
 
-import static cn.com.common.base.security.SecurityKeyFactory.getSecurityKey;
-import static cn.com.common.base.util.BeanPropertiesUtil.copyProperties;
-import static cn.com.common.base.util.ValidatorUtil.REGEX_MOBILE;
-import static cn.com.common.base.util.ValidatorUtil.isMatchRegex;
+import static com.wjs.common.base.security.SecurityKeyFactory.getSecurityKey;
+import static com.wjs.common.base.util.BeanPropertiesUtil.copyProperties;
+import static com.wjs.common.base.util.ValidatorUtil.REGEX_MOBILE;
+import static com.wjs.common.base.util.ValidatorUtil.isMatchRegex;
 
 @Setter
 @Getter

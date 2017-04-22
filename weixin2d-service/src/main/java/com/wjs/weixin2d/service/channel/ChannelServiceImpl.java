@@ -1,8 +1,8 @@
 package com.wjs.weixin2d.service.channel;
 
-import cn.com.common.base.base.BasePageResults;
-import cn.com.common.base.exception.BusinessExecption;
-import cn.com.common.base.query.QueryService;
+import com.wjs.common.base.base.BasePageResults;
+import com.wjs.common.base.execption.BusinessExecption;
+import com.wjs.common.base.query.QueryService;
 import com.wjs.weixin2d.api.dto.ChannelDTO;
 import com.wjs.weixin2d.domain.channel.Channel;
 import com.wjs.weixin2d.domain.channel.ChannelRpt;

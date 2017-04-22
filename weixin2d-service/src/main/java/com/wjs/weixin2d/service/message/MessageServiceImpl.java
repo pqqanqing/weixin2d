@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.service.message;
 
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.wjs.weixin2d.api.dto.MessageDTO;
 import com.wjs.weixin2d.domain.config.message.MessageConfig;
 import com.wjs.weixin2d.domain.config.message.MessageConfigRpt;

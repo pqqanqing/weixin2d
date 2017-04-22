@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.domain.config.oauth2;
 
 
-import cn.com.common.base.base.BaseEntity;
+import com.wjs.common.base.base.BaseEntity;
 import com.wjs.weixin2d.domain.provider.Provider;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
 import static com.wjs.weixin2d.common.constants.Oauth2Constant.OAUTH2_AUTHORIZE_URL;
 import static com.wjs.weixin2d.common.help.UrlHelp.urlEncode;
 

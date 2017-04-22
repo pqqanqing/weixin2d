@@ -59,24 +59,24 @@
         </dependencies>
     </dependencyManagement>
 
-    <scm>
+    <!--<scm>
         <connection>
             scm:svn:http://192.168.228.232:88/svn/wjs/trunk/weixin2d
         </connection>
         <developerConnection>
             scm:svn:http://192.168.228.232:88/svn/wjs/trunk/weixin2d
         </developerConnection>
-    </scm>
+    </scm>-->
     <build>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.1</version>
                 <configuration>
                     <tagBase>http://192.168.228.232:88/svn/wjs/tags/weixin2d</tagBase>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

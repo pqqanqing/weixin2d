@@ -1,14 +1,14 @@
 package com.wjs.weixin2d.domain.channel.strategy;
 
-import cn.com.common.base.base.BaseEntity;
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.base.BaseEntity;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.alibaba.fastjson.JSONObject;
 import com.wjs.weixin2d.domain.qrcode.QrCode;
 
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
-import static cn.com.common.base.util.HttpUtil2.doPost;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.HttpUtil2.doPost;
 import static com.wjs.weixin2d.common.constants.QrCodeConstant.CREATE_QRCODE_TICKET;
 import static java.util.Objects.nonNull;
 

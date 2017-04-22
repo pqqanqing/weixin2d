@@ -1,8 +1,8 @@
 package com.wjs.weixin2d.outrpc.controller;
 
-import cn.com.common.base.base.BasePageResults;
-import cn.com.common.base.query.QueryService;
-import cn.com.common.base.rpc.RpcResponse;
+import com.wjs.common.base.base.BasePageResults;
+import com.wjs.common.base.query.QueryService;
+import com.wjs.common.base.rpc.RpcResponse;
 import com.wjs.weixin2d.api.dto.ChannelDTO;
 import com.wjs.weixin2d.service.channel.ChannelService;
 import org.springframework.beans.factory.annotation.Autowired;

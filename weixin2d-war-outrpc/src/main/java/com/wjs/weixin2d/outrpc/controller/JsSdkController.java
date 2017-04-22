@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.outrpc.controller;
 
-import cn.com.common.base.rpc.RpcResponse;
+import com.wjs.common.base.rpc.RpcResponse;
 import com.wjs.weixin2d.service.jssdk.JsSdkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

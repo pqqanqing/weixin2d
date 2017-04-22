@@ -1,7 +1,7 @@
 package com.wjs.weixin2d.domain.oauth2;
 
-import cn.com.common.base.base.BaseEntity;
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.base.BaseEntity;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.alibaba.fastjson.JSONObject;
 import com.wjs.weixin2d.domain.config.oauth2.Oauth2Config;
 import com.wjs.weixin2d.domain.provider.Provider;
@@ -13,8 +13,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static cn.com.common.base.util.FreemarkerUtil.parseString4Map;
-import static cn.com.common.base.util.HttpUtil2.doGet2;
+import static com.wjs.common.base.util.FreemarkerUtil.parseString4Map;
+import static com.wjs.common.base.util.HttpUtil2.doGet2;
 import static com.wjs.weixin2d.common.constants.Oauth2Constant.OAUTH2_ACCESSTOKEN_URL;
 import static com.wjs.weixin2d.common.constants.Oauth2Constant.OAUTH2_USERINFO_URL;
 import static org.apache.commons.lang3.StringUtils.isBlank;

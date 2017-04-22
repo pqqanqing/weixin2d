@@ -1,6 +1,6 @@
 package com.wjs.weixin2d.service.player;
 
-import cn.com.common.base.exception.BusinessExecption;
+import com.wjs.common.base.execption.BusinessExecption;
 import com.wjs.weixin2d.api.dto.PlayerDTO;
 import com.wjs.weixin2d.domain.activity.Activity;
 import com.wjs.weixin2d.domain.activity.ActivityRpt;
